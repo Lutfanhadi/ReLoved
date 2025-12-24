@@ -1,10 +1,47 @@
 @import "tailwindcss";
 
 
-
 @theme{
     --font-nunito-sans: "Nunito Sans", sans-serif;
     --color-primary: #ffca1d;
     --color-secondary: #F5F5F5;
     --color-border: #D9D9D9;
+}
+
+/* Gunakan CSS murni di luar layer tailwind untuk tes */
+@keyframes scrollLeft {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+@keyframes scrollRight {
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
+}
+
+.scroller-inner-left {
+    display: flex;
+    gap: 1.5rem; /* gap-6 */
+    width: max-content;
+    flex-wrap: nowrap;
+    animation: scrollLeft 30s linear infinite;
+    /* Tambahkan ini untuk stabilitas */
+    will-change: transform;
+    backface-visibility: hidden;
+}
+
+.scroller-inner-right {
+    display: flex;
+    gap: 1.5rem; /* gap-6 */
+    width: max-content;
+    flex-wrap: nowrap;
+    animation: scrollRight 30s linear infinite;
+    will-change: transform;
+    backface-visibility: hidden;
+}
+
+/* Berhenti saat hover */
+.group:hover .scroller-inner-left,
+.group:hover .scroller-inner-right {
+    animation-play-state: paused;
 }
