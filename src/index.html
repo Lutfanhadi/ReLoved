@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ReLoved</title>
     <link rel="icon" href="assets/svg/reloved-logo.svg">
-    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="stylesheet" href="./css/output.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=42dot+Sans:wght@300..800&family=Comforter+Brush&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Hentaigana:wght@200..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Playwrite+AU+SA:wght@100..400&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sigmar&family=Unlock&display=swap" rel="stylesheet">
@@ -840,7 +840,7 @@
       </section>
 
         <!-- Section Koleksi -->
-        <section class="section-koleksi px-[20px] mt-[30px] md:px-[30px] md:mt-[40px] lg:mt-[25px] lg:px-5 max-w-7xl mx-auto overflow-hidden">
+        <section class="section-koleksi px-[20px] mt-[30px] md:px-[30px] md:mt-[40px] lg:mt-[25px] lg:px-5 max-w-7xl mx-auto">
             <div>
                 <h1 class="font-bold text-2xl mb-6 md:text-center md:text-[24px] lg:text-start lg:text-[32px]">Koleksi</h1>
         
@@ -878,480 +878,156 @@
             </div>
         
             <!-- Ulasan Card -->
-           <div class="relative flex overflow-hidden group w-full">
-            <div class="scroller-inner-left"> 
-                <!-- Set Ulasan Pertama -->
-                <div class="flex gap-6">
-                    <!-- Ulasan 1 -->
-                    <div class="cursor-pointer bg-white border border-gray-100 p-6 rounded-3xl shadow-sm flex flex-col justify-between w-[350px]">
-                        <div class="flex gap-4">
-                            <div class="flex-shrink-0 flex flex-col items-center">
-                                <div class="w-14 h-14 rounded-full bg-indigo-100 flex items-center justify-center overflow-hidden mb-3">
-                                    <span class="text-indigo-600 font-bold">AA</span>
-                                </div>
-                                <div class="inline-flex items-center bg-yellow-50 px-2 py-0.5 rounded-full">
-                                    <span class="text-[10px] font-bold text-yellow-700">⭐ 4.9</span>
-                                </div>
-                            </div>
-                            <div class="flex-grow">
-                                <div class="flex justify-between items-start mb-3">
-                                    <div>
-                                        <h2 class="font-bold text-gray-900 text-sm">anisaap</h2>
-                                        <p class="text-xs text-gray-400">Anisa Aprilia</p>
-                                    </div>
-                                    <div class="w-12 h-12 bg-gray-50 rounded-xl overflow-hidden flex-shrink-0 border border-gray-100">
-                                        <img src="https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?w=100&h=100&fit=crop" alt="Produk" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/100'" />
-                                    </div>
-                                </div>
-                                <p class="text-sm leading-relaxed text-gray-600 italic">
-                                    "Lucu banget bajunya, bahannya adem, murah banget!"
-                                </p>
-                            </div>
+            <div id="ulasan-card-top" class="w-full max-w-ful overflow-hidden ulasan-card-top flex justify-center items-center gap-4 mb-8 mt-10 bg-gradient-to-t from-white to opacity-80">
+                <!-- Ulasan 1 -->
+                <div class="ulasan w-[323px] h-[135px] flex justify-between p-2 border rounded-lg shadow-md overflow-hidden md:flex lg:flex">
+                    <div class="profil flex flex-col items-center mr-4">
+                        <img class="w-11 h-11 rounded-full" src="../src/assets/img/ulasan-profil/profil-image.png" alt="Profil-photo">
+                        <div class="rating flex flex-col items-center mt-2">
+                            <img class="w-11" src="../src/assets/svg/star-rating.svg" alt="Star Rating">
+                            <p class="text-xs font-semibold">4.9</p>
                         </div>
                     </div>
-
-                    <!-- Ulasan 2 -->
-                    <div class="cursor-pointer bg-white border border-gray-100 p-6 rounded-3xl shadow-sm flex flex-col justify-between w-[350px]">
-                        <div class="flex gap-4">
-                            <div class="flex-shrink-0 flex flex-col items-center">
-                                <div class="w-14 h-14 rounded-full bg-pink-100 flex items-center justify-center overflow-hidden mb-3">
-                                    <span class="text-pink-600 font-bold">RD</span>
-                                </div>
-                                <div class="inline-flex items-center bg-yellow-50 px-2 py-0.5 rounded-full">
-                                    <span class="text-[10px] font-bold text-yellow-700">⭐ 4.5</span>
-                                </div>
-                            </div>
-                            <div class="flex-grow">
-                                <div class="flex justify-between items-start mb-3">
-                                    <div>
-                                        <h2 class="font-bold text-gray-900 text-sm">riaaana</h2>
-                                        <p class="text-xs text-gray-400">Riana Dwi</p>
-                                    </div>
-                                    <div class="w-12 h-12 bg-gray-50 rounded-xl overflow-hidden flex-shrink-0 border border-gray-100">
-                                        <img src="https://images.unsplash.com/photo-1539109132382-381bb3f1c2b3?w=100&h=100&fit=crop" alt="Produk" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/100'" />
-                                    </div>
-                                </div>
-                                <p class="text-sm leading-relaxed text-gray-600 italic">
-                                    "Ngethrift tu asal teliti bisa nemu barang bagus dgn harga affordable~"
-                                </p>
-                            </div>
-                        </div>
+            
+                    <div class="m-2 w-[184px] flex flex-col">
+                        <h2 class="font-semibold text-sm">anisaap</h2>
+                        <p class="text-xs">Anisa Aprilia</p>
+                        <p class="mt-2 text-sm w-full">Lucu banget bajunya, bahannya adem, murah banget!</p>                        
                     </div>
-
-                    <!-- Ulasan 3 -->
-                    <div class="cursor-pointer bg-white border border-gray-100 p-6 rounded-3xl shadow-sm flex flex-col justify-between w-[350px]">
-                        <div class="flex gap-4">
-                            <div class="flex-shrink-0 flex flex-col items-center">
-                                <div class="w-14 h-14 rounded-full bg-blue-100 flex items-center justify-center overflow-hidden mb-3">
-                                    <span class="text-blue-600 font-bold">AF</span>
-                                </div>
-                                <div class="inline-flex items-center bg-yellow-50 px-2 py-0.5 rounded-full">
-                                    <span class="text-[10px] font-bold text-yellow-700">⭐ 4.3</span>
-                                </div>
-                            </div>
-                            <div class="flex-grow">
-                                <div class="flex justify-between items-start mb-3">
-                                    <div>
-                                        <h2 class="font-bold text-gray-900 text-sm">akhsan022</h2>
-                                        <p class="text-xs text-gray-400">Akhsan Fauzi</p>
-                                    </div>
-                                    <div class="w-12 h-12 bg-gray-50 rounded-xl overflow-hidden flex-shrink-0 border border-gray-100">
-                                        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=100&h=100&fit=crop" alt="Produk" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/100'" />
-                                    </div>
-                                </div>
-                                <p class="text-sm leading-relaxed text-gray-600 italic">
-                                    "Nyaman dipakai, model keren. Pas untuk olahraga atau jalan santai."
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Ulasan 4 -->
-                    <div class="cursor-pointer bg-white border border-gray-100 p-6 rounded-3xl shadow-sm flex flex-col justify-between w-[350px]">
-                        <div class="flex gap-4">
-                            <div class="flex-shrink-0 flex flex-col items-center">
-                                <div class="w-14 h-14 rounded-full bg-purple-100 flex items-center justify-center overflow-hidden mb-3">
-                                    <span class="text-purple-600 font-bold">SL</span>
-                                </div>
-                                <div class="inline-flex items-center bg-yellow-50 px-2 py-0.5 rounded-full">
-                                    <span class="text-[10px] font-bold text-yellow-700">⭐ 4.8</span>
-                                </div>
-                            </div>
-                            <div class="flex-grow">
-                                <div class="flex justify-between items-start mb-3">
-                                    <div>
-                                        <h2 class="font-bold text-gray-900 text-sm">sintalau</h2>
-                                        <p class="text-xs text-gray-400">Sinta Laura</p>
-                                    </div>
-                                    <div class="w-12 h-12 bg-gray-50 rounded-xl overflow-hidden flex-shrink-0 border border-gray-100">
-                                        <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=100&h=100&fit=crop" alt="Produk" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/100'" />
-                                    </div>
-                                </div>
-                                <p class="text-sm leading-relaxed text-gray-600 italic">
-                                    "Desain tasnya unik, kualitasnya juga masih bagus banget."
-                                </p>
-                            </div>
-                        </div>
+            
+                    <div class="produk-ulasan flex align-top">
+                        <img class="w-16 h-16 max-w-full" src="../src/assets/img/photo-product/kemeja-wanita.png" alt="Produk Photo">
                     </div>
                 </div>
 
-                <!-- Set Ulasan Kedua (DUPLIKAT PERSIS) untuk Efek Loop -->
-                <div class="flex gap-6" aria-hidden="true">
-                    <!-- Ulasan 1 (Dup) -->
-                    <div class="cursor-pointer bg-white border border-gray-100 p-6 rounded-3xl shadow-sm flex flex-col justify-between w-[350px]">
-                        <div class="flex gap-4">
-                            <div class="flex-shrink-0 flex flex-col items-center">
-                                <div class="w-14 h-14 rounded-full bg-indigo-100 flex items-center justify-center overflow-hidden mb-3">
-                                    <span class="text-indigo-600 font-bold">AA</span>
-                                </div>
-                                <div class="inline-flex items-center bg-yellow-50 px-2 py-0.5 rounded-full">
-                                    <span class="text-[10px] font-bold text-yellow-700">⭐ 4.9</span>
-                                </div>
-                            </div>
-                            <div class="flex-grow">
-                                <div class="flex justify-between items-start mb-3">
-                                    <div>
-                                        <h2 class="font-bold text-gray-900 text-sm">anisaap</h2>
-                                        <p class="text-xs text-gray-400">Anisa Aprilia</p>
-                                    </div>
-                                    <div class="w-12 h-12 bg-gray-50 rounded-xl overflow-hidden flex-shrink-0 border border-gray-100">
-                                        <img src="https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?w=100&h=100&fit=crop" alt="Produk" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/100'" />
-                                    </div>
-                                </div>
-                                <p class="text-sm leading-relaxed text-gray-600 italic">
-                                    "Lucu banget bajunya, bahannya adem, murah banget!"
-                                </p>
-                            </div>
+                <!-- Ulasan 2 -->
+                <div class="ulasan w-[323px] h-[135px] justify-between p-2 border rounded-lg hidden shadow-md md:flex lg:flex">
+                    <div class="profil flex flex-col items-center mr-4">
+                        <img class="w-11 h-11 rounded-full" src="../src/assets/img/ulasan-profil/profil-image2.png" alt="Profil-photo">
+                        <div class="rating flex flex-col items-center mt-2">
+                            <img class="w-11" src="../src/assets/svg/star-rating.svg" alt="Star Rating">
+                            <p class="text-xs font-semibold">4.5</p>
                         </div>
                     </div>
-                    <!-- Ulasan 2 (Dup) -->
-                    <div class="cursor-pointer bg-white border border-gray-100 p-6 rounded-3xl shadow-sm flex flex-col justify-between w-[350px]">
-                        <div class="flex gap-4">
-                            <div class="flex-shrink-0 flex flex-col items-center">
-                                <div class="w-14 h-14 rounded-full bg-pink-100 flex items-center justify-center overflow-hidden mb-3">
-                                    <span class="text-pink-600 font-bold">RD</span>
-                                </div>
-                                <div class="inline-flex items-center bg-yellow-50 px-2 py-0.5 rounded-full">
-                                    <span class="text-[10px] font-bold text-yellow-700">⭐ 4.5</span>
-                                </div>
-                            </div>
-                            <div class="flex-grow">
-                                <div class="flex justify-between items-start mb-3">
-                                    <div>
-                                        <h2 class="font-bold text-gray-900 text-sm">riaaana</h2>
-                                        <p class="text-xs text-gray-400">Riana Dwi</p>
-                                    </div>
-                                    <div class="w-12 h-12 bg-gray-50 rounded-xl overflow-hidden flex-shrink-0 border border-gray-100">
-                                        <img src="https://images.unsplash.com/photo-1539109132382-381bb3f1c2b3?w=100&h=100&fit=crop" alt="Produk" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/100'" />
-                                    </div>
-                                </div>
-                                <p class="text-sm leading-relaxed text-gray-600 italic">
-                                    "Ngethrift tu asal teliti bisa nemu barang bagus dgn harga affordable~"
-                                </p>
-                            </div>
-                        </div>
+            
+                    <div class="m-2 w-[184px] flex flex-col">
+                        <h2 class="font-semibold text-sm">riaaana</h2>
+                        <p class="text-xs">Riana Dwi</p>
+                        <p class="mt-2 text-sm w-full">Ngethrift tu asal teliti bisa nemu barang bagus dgn harga affordable~</p>                        
                     </div>
-                    <!-- Ulasan 3 (Dup) -->
-                    <div class="cursor-pointer bg-white border border-gray-100 p-6 rounded-3xl shadow-sm flex flex-col justify-between w-[350px]">
-                        <div class="flex gap-4">
-                            <div class="flex-shrink-0 flex flex-col items-center">
-                                <div class="w-14 h-14 rounded-full bg-blue-100 flex items-center justify-center overflow-hidden mb-3">
-                                    <span class="text-blue-600 font-bold">AF</span>
-                                </div>
-                                <div class="inline-flex items-center bg-yellow-50 px-2 py-0.5 rounded-full">
-                                    <span class="text-[10px] font-bold text-yellow-700">⭐ 4.3</span>
-                                </div>
-                            </div>
-                            <div class="flex-grow">
-                                <div class="flex justify-between items-start mb-3">
-                                    <div>
-                                        <h2 class="font-bold text-gray-900 text-sm">akhsan022</h2>
-                                        <p class="text-xs text-gray-400">Akhsan Fauzi</p>
-                                    </div>
-                                    <div class="w-12 h-12 bg-gray-50 rounded-xl overflow-hidden flex-shrink-0 border border-gray-100">
-                                        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=100&h=100&fit=crop" alt="Produk" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/100'" />
-                                    </div>
-                                </div>
-                                <p class="text-sm leading-relaxed text-gray-600 italic">
-                                    "Nyaman dipakai, model keren. Pas untuk olahraga atau jalan santai."
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Ulasan 4 (Dup) -->
-                    <div class="cursor-pointer bg-white border border-gray-100 p-6 rounded-3xl shadow-sm flex flex-col justify-between w-[350px]">
-                        <div class="flex gap-4">
-                            <div class="flex-shrink-0 flex flex-col items-center">
-                                <div class="w-14 h-14 rounded-full bg-purple-100 flex items-center justify-center overflow-hidden mb-3">
-                                    <span class="text-purple-600 font-bold">SL</span>
-                                </div>
-                                <div class="inline-flex items-center bg-yellow-50 px-2 py-0.5 rounded-full">
-                                    <span class="text-[10px] font-bold text-yellow-700">⭐ 4.8</span>
-                                </div>
-                            </div>
-                            <div class="flex-grow">
-                                <div class="flex justify-between items-start mb-3">
-                                    <div>
-                                        <h2 class="font-bold text-gray-900 text-sm">sintalau</h2>
-                                        <p class="text-xs text-gray-400">Sinta Laura</p>
-                                    </div>
-                                    <div class="w-12 h-12 bg-gray-50 rounded-xl overflow-hidden flex-shrink-0 border border-gray-100">
-                                        <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=100&h=100&fit=crop" alt="Produk" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/100'" />
-                                    </div>
-                                </div>
-                                <p class="text-sm leading-relaxed text-gray-600 italic">
-                                    "Desain tasnya unik, kualitasnya juga masih bagus banget."
-                                </p>
-                            </div>
-                        </div>
+            
+                    <div class="produk-ulasan flex align-top">
+                        <img class="w-16 h-16 max-w-full" src="../src/assets/img/photo-product/kemeja-wanita2.png" alt="Produk Photo">
                     </div>
                 </div>
 
+                <!-- Ulasan 3 -->
+                <div class="ulasan w-[323px] h-[135px] justify-between p-2 border rounded-lg shadow-md hidden md:flex lg:flex">
+                    <div class="profil flex flex-col items-center mr-4">
+                        <img class="w-11 h-11 rounded-full" src="../src/assets/img/ulasan-profil/profil-image3.png" alt="Profil-photo">
+                        <div class="rating flex flex-col items-center mt-2">
+                            <img class="w-11" src="../src/assets/svg/star-rating.svg" alt="Star Rating">
+                            <p class="text-xs font-semibold">4.3</p>
+                        </div>
+                    </div>
+            
+                    <div class="m-2 w-[184px] flex flex-col">
+                        <h2 class="font-semibold text-sm">akhsan022</h2>
+                        <p class="text-xs">Akhsan Fauzi</p>
+                        <p class="mt-2 text-sm w-full">Nyaman dipakai, model keren. Pas untuk olahraga atau jalan santai</p>                        
+                    </div>
+            
+                    <div class="produk-ulasan flex align-top">
+                        <img class="w-16 h-16 max-w-full" src="../src/assets/img/nike-shoes.png" alt="Produk Photo">
+                    </div>
+                </div>
+
+                <!-- Ulasan 4 -->
+                <div class="ulasan w-[323px] h-[135px] justify-between p-2 border rounded-lg shadow-md hidden md:hidden lg:flex">
+                    <div class="profil flex flex-col items-center mr-4">
+                        <img class="w-11 h-11 rounded-full" src="../src/assets/img/ulasan-profil/profil-image4.png" alt="Profil-photo">
+                        <div class="rating flex flex-col items-center mt-2">
+                            <img class="w-11" src="../src/assets/svg/star-rating.svg" alt="Star Rating">
+                            <p class="text-xs font-semibold">4.8</p>
+                        </div>
+                    </div>
+            
+                    <div class="m-2 w-[184px] flex flex-col">
+                        <h2 class="font-semibold text-sm">sintalau</h2>
+                        <p class="text-xs">Sinta Laura</p>
+                        <p class="mt-2 text-sm w-full">Desain tasnya unik, kualitasnya juga masih bagus.</p>                        
+                    </div>
+            
+                    <div class="produk-ulasan flex align-top">
+                        <img class="w-16 h-16 max-w-full" src="../src/assets/img/photo-product/mini-bag.png" alt="Produk Photo">
+                    </div>
+                </div>
             </div>
 
-            <!-- Gradient Overlays (Optional - untuk mempercantik transisi pinggir) -->
-            <div class="pointer-events-none absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-gray-50 to-transparent"></div>
-            <div class="pointer-events-none absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-gray-50 to-transparent"></div>
-        </div>
-
-        <div class="relative flex overflow-hidden group w-full mt-10">
-            <!-- Container Animasi -->
-            <!-- Kita menduplikasi isi ulasan agar transisi terlihat seamless/tanpa putus -->
-            <div class="scroller-inner-right">
-                
-                <!-- Set Ulasan Pertama -->
-                <div class="flex gap-6">
-                    <!-- Ulasan 1 -->
-                    <div class="cursor-pointer bg-white border border-gray-100 p-6 rounded-3xl shadow-sm flex flex-col justify-between w-[350px]">
-                        <div class="flex gap-4">
-                            <div class="flex-shrink-0 flex flex-col items-center">
-                                <div class="w-14 h-14 rounded-full bg-indigo-100 flex items-center justify-center overflow-hidden mb-3">
-                                    <span class="text-indigo-600 font-bold">AA</span>
-                                </div>
-                                <div class="inline-flex items-center bg-yellow-50 px-2 py-0.5 rounded-full">
-                                    <span class="text-[10px] font-bold text-yellow-700">⭐ 4.9</span>
-                                </div>
-                            </div>
-                            <div class="flex-grow">
-                                <div class="flex justify-between items-start mb-3">
-                                    <div>
-                                        <h2 class="font-bold text-gray-900 text-sm">anisaap</h2>
-                                        <p class="text-xs text-gray-400">Anisa Aprilia</p>
-                                    </div>
-                                    <div class="w-12 h-12 bg-gray-50 rounded-xl overflow-hidden flex-shrink-0 border border-gray-100">
-                                        <img src="https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?w=100&h=100&fit=crop" alt="Produk" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/100'" />
-                                    </div>
-                                </div>
-                                <p class="text-sm leading-relaxed text-gray-600 italic">
-                                    "Lucu banget bajunya, bahannya adem, murah banget!"
-                                </p>
-                            </div>
+            <div id="ulasan-card-bottom" class="flex justify-center gap-4 px-4 bg-gradient-to-t from-white to opacity-30">
+                <!-- Ulasan 1 -->
+                <div class="ulasan w-[323px] h-[135px] justify-between p-2 border rounded-lg shadow-md hidden md:flex lg:flex">
+                    <div class="profil flex flex-col items-center mr-4">
+                        <img class="w-11 h-11 rounded-full" src="../src/assets/img/ulasan-profil/profil-image5.png" alt="Profil-photo">
+                        <div class="rating flex flex-col items-center mt-2">
+                            <img class="w-11" src="../src/assets/svg/star-rating.svg" alt="Star Rating">
+                            <p class="text-xs font-semibold">4.7</p>
                         </div>
                     </div>
-
-                    <!-- Ulasan 2 -->
-                    <div class="cursor-pointer bg-white border border-gray-100 p-6 rounded-3xl shadow-sm flex flex-col justify-between w-[350px]">
-                        <div class="flex gap-4">
-                            <div class="flex-shrink-0 flex flex-col items-center">
-                                <div class="w-14 h-14 rounded-full bg-pink-100 flex items-center justify-center overflow-hidden mb-3">
-                                    <span class="text-pink-600 font-bold">RD</span>
-                                </div>
-                                <div class="inline-flex items-center bg-yellow-50 px-2 py-0.5 rounded-full">
-                                    <span class="text-[10px] font-bold text-yellow-700">⭐ 4.5</span>
-                                </div>
-                            </div>
-                            <div class="flex-grow">
-                                <div class="flex justify-between items-start mb-3">
-                                    <div>
-                                        <h2 class="font-bold text-gray-900 text-sm">riaaana</h2>
-                                        <p class="text-xs text-gray-400">Riana Dwi</p>
-                                    </div>
-                                    <div class="w-12 h-12 bg-gray-50 rounded-xl overflow-hidden flex-shrink-0 border border-gray-100">
-                                        <img src="https://images.unsplash.com/photo-1539109132382-381bb3f1c2b3?w=100&h=100&fit=crop" alt="Produk" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/100'" />
-                                    </div>
-                                </div>
-                                <p class="text-sm leading-relaxed text-gray-600 italic">
-                                    "Ngethrift tu asal teliti bisa nemu barang bagus dgn harga affordable~"
-                                </p>
-                            </div>
-                        </div>
+            
+                    <div class="m-2 w-[184px] flex flex-col">
+                        <h2 class="font-semibold text-sm">niakurnia</h2>
+                        <p class="text-xs">Nia Kurnia</p>
+                        <p class="mt-2 text-sm w-full">Bahan adem, pas di badan. Cocok untuk kerja atau acara santai</p>                        
                     </div>
-
-                    <!-- Ulasan 3 -->
-                    <div class="cursor-pointer bg-white border border-gray-100 p-6 rounded-3xl shadow-sm flex flex-col justify-between w-[350px]">
-                        <div class="flex gap-4">
-                            <div class="flex-shrink-0 flex flex-col items-center">
-                                <div class="w-14 h-14 rounded-full bg-blue-100 flex items-center justify-center overflow-hidden mb-3">
-                                    <span class="text-blue-600 font-bold">AF</span>
-                                </div>
-                                <div class="inline-flex items-center bg-yellow-50 px-2 py-0.5 rounded-full">
-                                    <span class="text-[10px] font-bold text-yellow-700">⭐ 4.3</span>
-                                </div>
-                            </div>
-                            <div class="flex-grow">
-                                <div class="flex justify-between items-start mb-3">
-                                    <div>
-                                        <h2 class="font-bold text-gray-900 text-sm">akhsan022</h2>
-                                        <p class="text-xs text-gray-400">Akhsan Fauzi</p>
-                                    </div>
-                                    <div class="w-12 h-12 bg-gray-50 rounded-xl overflow-hidden flex-shrink-0 border border-gray-100">
-                                        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=100&h=100&fit=crop" alt="Produk" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/100'" />
-                                    </div>
-                                </div>
-                                <p class="text-sm leading-relaxed text-gray-600 italic">
-                                    "Nyaman dipakai, model keren. Pas untuk olahraga atau jalan santai."
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Ulasan 4 -->
-                    <div class="cursor-pointer bg-white border border-gray-100 p-6 rounded-3xl shadow-sm flex flex-col justify-between w-[350px]">
-                        <div class="flex gap-4">
-                            <div class="flex-shrink-0 flex flex-col items-center">
-                                <div class="w-14 h-14 rounded-full bg-purple-100 flex items-center justify-center overflow-hidden mb-3">
-                                    <span class="text-purple-600 font-bold">SL</span>
-                                </div>
-                                <div class="inline-flex items-center bg-yellow-50 px-2 py-0.5 rounded-full">
-                                    <span class="text-[10px] font-bold text-yellow-700">⭐ 4.8</span>
-                                </div>
-                            </div>
-                            <div class="flex-grow">
-                                <div class="flex justify-between items-start mb-3">
-                                    <div>
-                                        <h2 class="font-bold text-gray-900 text-sm">sintalau</h2>
-                                        <p class="text-xs text-gray-400">Sinta Laura</p>
-                                    </div>
-                                    <div class="w-12 h-12 bg-gray-50 rounded-xl overflow-hidden flex-shrink-0 border border-gray-100">
-                                        <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=100&h=100&fit=crop" alt="Produk" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/100'" />
-                                    </div>
-                                </div>
-                                <p class="text-sm leading-relaxed text-gray-600 italic">
-                                    "Desain tasnya unik, kualitasnya juga masih bagus banget."
-                                </p>
-                            </div>
-                        </div>
+            
+                    <div class="produk-ulasan flex align-top">
+                        <img class="w-16 h-16 max-w-full" src="../src/assets/img/photo-product/cardigan-wanita.png" alt="Produk Photo">
                     </div>
                 </div>
 
-                <!-- Set Ulasan Kedua (DUPLIKAT PERSIS) untuk Efek Loop -->
-                <div class="flex gap-6" aria-hidden="true">
-                    <!-- Ulasan 1 (Dup) -->
-                    <div class="cursor-pointer bg-white border border-gray-100 p-6 rounded-3xl shadow-sm flex flex-col justify-between w-[350px]">
-                        <div class="flex gap-4">
-                            <div class="flex-shrink-0 flex flex-col items-center">
-                                <div class="w-14 h-14 rounded-full bg-indigo-100 flex items-center justify-center overflow-hidden mb-3">
-                                    <span class="text-indigo-600 font-bold">AA</span>
-                                </div>
-                                <div class="inline-flex items-center bg-yellow-50 px-2 py-0.5 rounded-full">
-                                    <span class="text-[10px] font-bold text-yellow-700">⭐ 4.9</span>
-                                </div>
-                            </div>
-                            <div class="flex-grow">
-                                <div class="flex justify-between items-start mb-3">
-                                    <div>
-                                        <h2 class="font-bold text-gray-900 text-sm">anisaap</h2>
-                                        <p class="text-xs text-gray-400">Anisa Aprilia</p>
-                                    </div>
-                                    <div class="w-12 h-12 bg-gray-50 rounded-xl overflow-hidden flex-shrink-0 border border-gray-100">
-                                        <img src="https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?w=100&h=100&fit=crop" alt="Produk" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/100'" />
-                                    </div>
-                                </div>
-                                <p class="text-sm leading-relaxed text-gray-600 italic">
-                                    "Lucu banget bajunya, bahannya adem, murah banget!"
-                                </p>
-                            </div>
+                <!-- Ulasan 2 -->
+                <div class="ulasan w-[323px] h-[135px] justify-between p-2 border rounded-lg shadow-md overflow-hidden hidden md:flex lg:flex">
+                    <div class="profil flex flex-col items-center mr-4">
+                        <img class="w-11 h-11 rounded-full" src="../src/assets/img/ulasan-profil/profil-image6.png" alt="Profil-photo">
+                        <div class="rating flex flex-col items-center mt-2">
+                            <img class="w-11" src="../src/assets/svg/star-rating.svg" alt="Star Rating">
+                            <p class="text-xs font-semibold">4.5</p>
                         </div>
                     </div>
-                    <!-- Ulasan 2 (Dup) -->
-                    <div class="cursor-pointer bg-white border border-gray-100 p-6 rounded-3xl shadow-sm flex flex-col justify-between w-[350px]">
-                        <div class="flex gap-4">
-                            <div class="flex-shrink-0 flex flex-col items-center">
-                                <div class="w-14 h-14 rounded-full bg-pink-100 flex items-center justify-center overflow-hidden mb-3">
-                                    <span class="text-pink-600 font-bold">RD</span>
-                                </div>
-                                <div class="inline-flex items-center bg-yellow-50 px-2 py-0.5 rounded-full">
-                                    <span class="text-[10px] font-bold text-yellow-700">⭐ 4.5</span>
-                                </div>
-                            </div>
-                            <div class="flex-grow">
-                                <div class="flex justify-between items-start mb-3">
-                                    <div>
-                                        <h2 class="font-bold text-gray-900 text-sm">riaaana</h2>
-                                        <p class="text-xs text-gray-400">Riana Dwi</p>
-                                    </div>
-                                    <div class="w-12 h-12 bg-gray-50 rounded-xl overflow-hidden flex-shrink-0 border border-gray-100">
-                                        <img src="https://images.unsplash.com/photo-1539109132382-381bb3f1c2b3?w=100&h=100&fit=crop" alt="Produk" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/100'" />
-                                    </div>
-                                </div>
-                                <p class="text-sm leading-relaxed text-gray-600 italic">
-                                    "Ngethrift tu asal teliti bisa nemu barang bagus dgn harga affordable~"
-                                </p>
-                            </div>
-                        </div>
+            
+                    <div class="m-2 w-[184px] flex flex-col">
+                        <h2 class="font-semibold text-sm">aryonuh</h2>
+                        <p class="text-xs">Aryo Nugroho</p>
+                        <p class="mt-2 text-sm w-full">Pelayanannya ramah dan responsif, barangnya juga dikemas dengan rapi</p>                        
                     </div>
-                    <!-- Ulasan 3 (Dup) -->
-                    <div class="cursor-pointer bg-white border border-gray-100 p-6 rounded-3xl shadow-sm flex flex-col justify-between w-[350px]">
-                        <div class="flex gap-4">
-                            <div class="flex-shrink-0 flex flex-col items-center">
-                                <div class="w-14 h-14 rounded-full bg-blue-100 flex items-center justify-center overflow-hidden mb-3">
-                                    <span class="text-blue-600 font-bold">AF</span>
-                                </div>
-                                <div class="inline-flex items-center bg-yellow-50 px-2 py-0.5 rounded-full">
-                                    <span class="text-[10px] font-bold text-yellow-700">⭐ 4.3</span>
-                                </div>
-                            </div>
-                            <div class="flex-grow">
-                                <div class="flex justify-between items-start mb-3">
-                                    <div>
-                                        <h2 class="font-bold text-gray-900 text-sm">akhsan022</h2>
-                                        <p class="text-xs text-gray-400">Akhsan Fauzi</p>
-                                    </div>
-                                    <div class="w-12 h-12 bg-gray-50 rounded-xl overflow-hidden flex-shrink-0 border border-gray-100">
-                                        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=100&h=100&fit=crop" alt="Produk" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/100'" />
-                                    </div>
-                                </div>
-                                <p class="text-sm leading-relaxed text-gray-600 italic">
-                                    "Nyaman dipakai, model keren. Pas untuk olahraga atau jalan santai."
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Ulasan 4 (Dup) -->
-                    <div class="cursor-pointer bg-white border border-gray-100 p-6 rounded-3xl shadow-sm flex flex-col justify-between w-[350px]">
-                        <div class="flex gap-4">
-                            <div class="flex-shrink-0 flex flex-col items-center">
-                                <div class="w-14 h-14 rounded-full bg-purple-100 flex items-center justify-center overflow-hidden mb-3">
-                                    <span class="text-purple-600 font-bold">SL</span>
-                                </div>
-                                <div class="inline-flex items-center bg-yellow-50 px-2 py-0.5 rounded-full">
-                                    <span class="text-[10px] font-bold text-yellow-700">⭐ 4.8</span>
-                                </div>
-                            </div>
-                            <div class="flex-grow">
-                                <div class="flex justify-between items-start mb-3">
-                                    <div>
-                                        <h2 class="font-bold text-gray-900 text-sm">sintalau</h2>
-                                        <p class="text-xs text-gray-400">Sinta Laura</p>
-                                    </div>
-                                    <div class="w-12 h-12 bg-gray-50 rounded-xl overflow-hidden flex-shrink-0 border border-gray-100">
-                                        <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=100&h=100&fit=crop" alt="Produk" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/100'" />
-                                    </div>
-                                </div>
-                                <p class="text-sm leading-relaxed text-gray-600 italic">
-                                    "Desain tasnya unik, kualitasnya juga masih bagus banget."
-                                </p>
-                            </div>
-                        </div>
+            
+                    <div class="produk-ulasan flex align-top">
+                        <img class="w-16 h-16 max-w-full" src="../src/assets/img/photo-product/kemeja-pria.png" alt="Produk Photo">
                     </div>
                 </div>
 
-            </div>
-
-            <!-- Gradient Overlays (Optional - untuk mempercantik transisi pinggir) -->
-            <div class="pointer-events-none absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-gray-50 to-transparent"></div>
-            <div class="pointer-events-none absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-gray-50 to-transparent"></div>
-        </div>   
+                <!-- Ulasan 3 -->
+                <div class="ulasan w-[323px] h-[135px] justify-between p-2 border rounded-lg shadow-md overflow-hidden hidden md:hidden lg:flex">
+                    <div class="profil flex flex-col items-center mr-4">
+                        <img class="w-11 h-11 rounded-full" src="../src/assets/img/ulasan-profil/profil-image7.png" alt="Profil-photo">
+                        <div class="rating flex flex-col items-center mt-2">
+                            <img class="w-11" src="../src/assets/svg/star-rating.svg" alt="Star Rating">
+                            <p class="text-xs font-semibold">5.0</p>
+                        </div>
+                    </div>
+            
+                    <div class="m-2 w-[184px] flex flex-col">
+                        <h2 class="font-semibold text-sm">mrammm</h2>
+                        <p class="text-xs">M. Ramzi</p>
+                        <p class="mt-2 text-sm w-full">Barang sesuai deskripsi dan foto. Harganya juga ramah di kantong.</p>                        
+                    </div>
+            
+                    <div class="produk-ulasan flex align-top">
+                        <img class="w-16 h-16 max-w-full" src="../src/assets/img/photo-product/kemeja-pria2.png" alt="Produk Photo">
+                    </div>
+                </div>
+            </div>    
         </section>
         
         <!-- Section App -->
