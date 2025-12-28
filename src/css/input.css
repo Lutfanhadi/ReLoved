@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+
+@theme{
+    --font-nunito-sans: "Nunito Sans", sans-serif;
+    --color-primary: #ffca1d;
+    --color-secondary: #F5F5F5;
+    --color-border: #D9D9D9;
+    --breakpoint-xs: 330px;
+}
+
+ /* Animasi Custom untuk Infinite Scroll */
+        @keyframes left {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(-50%);
+            }
+        }
+        @keyframes right {
+            from {
+                transform: translateX(-50%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        .animate-infinite-scroll-left {
+            display: flex;
+            width: max-content;
+            animation: left 30s linear infinite;
+        }
+
+        .animate-infinite-scroll-right {
+            display: flex;
+            width: max-content;
+            animation: right 30s linear infinite;
+        }
+
+        /* Berhenti saat kursor menyentuh (Hover) */
+        .group:hover .animate-infinite-scroll-left,
+        .group:hover .animate-infinite-scroll-right {
+            animation-play-state: paused;
+        }
+
+        /* Menghilangkan scrollbar tapi tetap bisa di-scroll manual jika perlu */
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }

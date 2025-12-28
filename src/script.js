@@ -1,8 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
- 
- 
- 
- 
   // Navbar Toggle
   const container = document.getElementById("containerNavbar");
   const toggleMenu = document.getElementById("toggleMenu");
