@@ -13,7 +13,7 @@
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
     <script src="../script.js"></script>
 </head>
-<body class="font-nunito-sans md:w-[1020px] lg:w-[1349px] mx-auto">
+<body class="font-nunito-sans">
      <nav
   class="border-border border-b-2 sticky top-0 bg-white z-20 md:border-b-2 xl:py-[10px] xl:border-none"
   >
@@ -380,23 +380,23 @@
  
 
     <!-- Main Content -->
-    <main class="informasi-content justify-between px-4 sm:px-6">
+    <main class="informasi-content justify-between px-[20px] md:px-[30px] lg:px-5 max-w-7xl mx-auto">
       <h1 class="text-2xl font-bold text-center mt-10 mb-6 lg:mb-[100px]">
           Pertanyaan yang Sering Ditanyakan
       </h1>
   
-      <div class="flex flex-col lg:flex-row items-center lg:items-start gap-10 lg:gap-25 max-w-full mx-auto mt-10 mb-10">
+      <div class="flex flex-col-reverse lg:flex-row items-center lg:items-start gap-10 lg:gap-25 max-w-full mx-auto mt-10 mb-10">
           <!-- Bagian Kiri (Accordion FAQ) -->
           <div class="w-full max-w-[604px] bg-blue flex flex-col lg:mx-[55px]">
               <div x-data="{ open: null }" class="w-full">
                   <!-- FAQ Items -->
                   <div class="mb-3 w-full">
-                      <button class="flex justify-between items-center w-full px-4 py-3 rounded-lg shadow-md transition-all"
+                      <button class="flex gap-5 justify-between items-center w-full px-4 py-3 rounded-lg shadow-md transition-all"
                           @click="open = (open === 1 ? null : 1)">
-                          <span class="text-left text-gray-600 font-medium text-sm">
+                          <span class="text-left w-full text-gray-600 font-medium text-sm">
                               Apakah jika jual beli thrifting di sini aman?
                           </span>
-                          <span class="w-8 h-8 flex items-center justify-center bg-yellow-400 text-white font-bold rounded-full transition-transform duration-200"
+                          <span class="w-8 h-8 flex items-center justify-center bg-yellow-400 text-white font-bold rounded-full transition-transform duration-500"
                               :class="{ 'rotate-45': open === 1 }">+</span>
                       </button>
                       <div x-show="open === 1" class="p-4 bg-gray-100 rounded-lg mt-2 text-gray-600 text-sm">
@@ -406,12 +406,12 @@
   
                   <!-- FAQ 2 -->
                   <div class="mb-3 w-full">
-                      <button class="flex justify-between items-center w-full px-4 py-3 rounded-lg shadow-md transition-all"
+                      <button class="flex gap-5 justify-between items-center w-full px-4 py-3 rounded-lg shadow-md transition-all"
                           @click="open = (open === 2 ? null : 2)">
-                          <span class="text-left w-[200px] text-gray-600 font-medium text-sm">
+                          <span class="text-left w-full text-gray-600 font-medium text-sm">
                               Apakah saya dapat return uang saya jika barang tidak sesuai?
                           </span>
-                          <span class="w-8 h-8 flex items-center justify-center bg-yellow-400 text-white font-bold rounded-full transition-transform duration-200"
+                          <span class="w-8 h-8 flex items-center justify-center bg-yellow-400 text-white font-bold rounded-full transition-transform duration-500"
                               :class="{ 'rotate-45': open === 2 }">+</span>
                       </button>
                       <div x-show="open === 2" class="p-4 bg-gray-100 rounded-lg mt-2 text-gray-600 text-sm">
@@ -421,12 +421,12 @@
   
                   <!-- FAQ 3 -->
                   <div class="mb-3 w-full">
-                      <button class="flex justify-between items-center w-full px-4 py-3 rounded-lg shadow-md transition-all"
+                      <button class="flex gap-5 justify-between items-center w-full px-4 py-3 rounded-lg shadow-md transition-all"
                           @click="open = (open === 3 ? null : 3)">
-                          <span class="text-left w-[200px] text-gray-600 font-medium text-sm">
+                          <span class="text-left w-full text-gray-600 font-medium text-sm">
                               Apakah tukar fashion pada website ini gratis?
                           </span>
-                          <span class="w-8 h-8 flex items-center justify-center bg-yellow-400 text-white font-bold rounded-full transition-transform duration-200"
+                          <span class="w-8 h-8 flex items-center justify-center bg-yellow-400 text-white font-bold rounded-full transition-transform duration-500"
                               :class="{ 'rotate-45': open === 3 }">+</span>
                       </button>
                       <div x-show="open === 3" class="p-4 bg-gray-100 rounded-lg mt-2 text-gray-600 text-sm">
@@ -436,12 +436,12 @@
   
                   <!-- FAQ 4 -->
                   <div class="mb-3 w-full">
-                      <button class="flex justify-between items-center w-full px-4 py-3 rounded-lg shadow-md transition-all"
+                      <button class="flex gap-5 justify-between items-center w-full px-4 py-3 rounded-lg shadow-md transition-all"
                           @click="open = (open === 4 ? null : 4)">
-                          <span class="text-left w-[200px] text-gray-600 font-medium text-sm">
+                          <span class="text-left w-full text-gray-600 font-medium text-sm">
                               Barang yang saya sumbangkan akan diberikan kepada siapa?
                           </span>
-                          <span class="w-8 h-8 flex items-center justify-center bg-yellow-400 text-white font-bold rounded-full transition-transform duration-200"
+                          <span class="w-8 h-8 flex items-center justify-center bg-yellow-400 text-white font-bold rounded-full transition-transform duration-500"
                               :class="{ 'rotate-45': open === 4 }">+</span>
                       </button>
                       <div x-show="open === 4" class="p-4 bg-gray-100 rounded-lg mt-2 text-gray-600 text-sm">
@@ -451,12 +451,12 @@
   
                   <!-- FAQ 5 -->
                   <div class="mb-3 w-full">
-                      <button class="flex justify-between items-center w-full px-4 py-3 rounded-lg shadow-md transition-all"
+                      <button class="flex gap-5 justify-between items-center w-full px-4 py-3 rounded-lg shadow-md transition-all"
                           @click="open = (open === 5 ? null : 5)">
-                          <span class="text-left w-[200px] text-gray-600 font-medium text-sm">
+                          <span class="text-left w-full text-gray-600 font-medium text-sm">
                               Dimana saya bisa membuat keluhan jual beli di sini?
                           </span>
-                          <span class="w-8 h-8 flex items-center justify-center bg-yellow-400 text-white font-bold rounded-full transition-transform duration-200"
+                          <span class="w-8 h-8 flex items-center justify-center bg-yellow-400 text-white font-bold rounded-full transition-transform duration-500"
                               :class="{ 'rotate-45': open === 5 }">+</span>
                       </button>
                       <div x-show="open === 5" class="p-4 bg-gray-100 rounded-lg mt-2 text-gray-600 text-sm">
@@ -473,7 +473,7 @@
               <p class="text-gray-700 text-sm mb-2 w-full lg:text-left">Beritahu aku</p>
               <input type="text" 
                   class="w-full h-[40px] px-4 py-2 border border-gray-200 rounded-lg shadow-sm focus:ring-2 focus:ring-yellow-400 focus:outline-none">
-              <button class="mt-4 w-[120px] bg-primary text-white font-bold py-2 rounded-full shadow-md shadow-amber-300 hover:bg-yellow-500 transition">
+              <button class="mt-4 w-[120px] bg-primary text-white font-bold py-2 rounded-lg shadow-md shadow-amber-300 hover:bg-yellow-500 transition">
                   Kirim
               </button>
           </div>
