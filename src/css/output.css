@@ -6,7 +6,6 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-500: oklch(0.637 0.237 25.331);
     --color-amber-50: oklch(0.987 0.022 95.277);
     --color-amber-200: oklch(0.924 0.12 95.746);
     --color-amber-300: oklch(0.879 0.169 91.605);
@@ -287,9 +286,6 @@
   .top-\[190px\] {
     top: 190px;
   }
-  .top-\[200px\] {
-    top: 200px;
-  }
   .-right-\[20px\] {
     right: calc(20px * -1);
   }
@@ -326,9 +322,6 @@
   .bottom-\[160px\] {
     bottom: 160px;
   }
-  .bottom-\[400px\] {
-    bottom: 400px;
-  }
   .left-0 {
     left: calc(var(--spacing) * 0);
   }
@@ -346,9 +339,6 @@
   }
   .left-\[130px\] {
     left: 130px;
-  }
-  .left-\[250px\] {
-    left: 250px;
   }
   .z-0 {
     z-index: 0;
@@ -415,9 +405,6 @@
   }
   .my-10 {
     margin-block: calc(var(--spacing) * 10);
-  }
-  .my-\[40px\] {
-    margin-block: 40px;
   }
   .mt-0 {
     margin-top: calc(var(--spacing) * 0);
@@ -611,9 +598,6 @@
   .h-\[48px\] {
     height: 48px;
   }
-  .h-\[51px\] {
-    height: 51px;
-  }
   .h-\[64px\] {
     height: 64px;
   }
@@ -740,9 +724,6 @@
   .w-\[48px\] {
     width: 48px;
   }
-  .w-\[50px\] {
-    width: 50px;
-  }
   .w-\[55px\] {
     width: 55px;
   }
@@ -778,9 +759,6 @@
   }
   .w-\[98px\] {
     width: 98px;
-  }
-  .w-\[100px\] {
-    width: 100px;
   }
   .w-\[110px\] {
     width: 110px;
@@ -841,9 +819,6 @@
   }
   .w-\[341px\] {
     width: 341px;
-  }
-  .w-\[5100px\] {
-    width: 5100px;
   }
   .w-fit {
     width: fit-content;
@@ -1121,9 +1096,6 @@
   }
   .bg-purple-100 {
     background-color: var(--color-purple-100);
-  }
-  .bg-red-500 {
-    background-color: var(--color-red-500);
   }
   .bg-secondary {
     background-color: var(--color-secondary);
@@ -1937,12 +1909,6 @@
       line-height: var(--tw-leading, var(--text-lg--line-height));
     }
   }
-  .xs\:text-sm {
-    @media (width >= 330px) {
-      font-size: var(--text-sm);
-      line-height: var(--tw-leading, var(--text-sm--line-height));
-    }
-  }
   .xs\:text-\[12px\] {
     @media (width >= 330px) {
       font-size: 12px;
@@ -2511,11 +2477,6 @@
       height: 100%;
     }
   }
-  .md\:h-screen {
-    @media (width >= 48rem) {
-      height: 100vh;
-    }
-  }
   .md\:min-h-screen {
     @media (width >= 48rem) {
       min-height: 100vh;
@@ -2932,11 +2893,6 @@
       padding-inline: 18px;
     }
   }
-  .md\:px-\[19px\] {
-    @media (width >= 48rem) {
-      padding-inline: 19px;
-    }
-  }
   .md\:px-\[20px\] {
     @media (width >= 48rem) {
       padding-inline: 20px;
@@ -3050,11 +3006,6 @@
   .md\:py-\[21px\] {
     @media (width >= 48rem) {
       padding-block: 21px;
-    }
-  }
-  .md\:py-\[22px\] {
-    @media (width >= 48rem) {
-      padding-block: 22px;
     }
   }
   .md\:py-\[25px\] {
@@ -3257,11 +3208,6 @@
       margin-inline: 55px;
     }
   }
-  .lg\:my-10 {
-    @media (width >= 64rem) {
-      margin-block: calc(var(--spacing) * 10);
-    }
-  }
   .lg\:my-16 {
     @media (width >= 64rem) {
       margin-block: calc(var(--spacing) * 16);
@@ -3270,11 +3216,6 @@
   .lg\:mt-0 {
     @media (width >= 64rem) {
       margin-top: calc(var(--spacing) * 0);
-    }
-  }
-  .lg\:mt-10 {
-    @media (width >= 64rem) {
-      margin-top: calc(var(--spacing) * 10);
     }
   }
   .lg\:mt-16 {
@@ -3345,16 +3286,6 @@
   .lg\:mt-\[140px\] {
     @media (width >= 64rem) {
       margin-top: 140px;
-    }
-  }
-  .lg\:mb-5 {
-    @media (width >= 64rem) {
-      margin-bottom: calc(var(--spacing) * 5);
-    }
-  }
-  .lg\:mb-10 {
-    @media (width >= 64rem) {
-      margin-bottom: calc(var(--spacing) * 10);
     }
   }
   .lg\:mb-\[10px\] {
@@ -3907,11 +3838,6 @@
       padding-inline: 15px;
     }
   }
-  .lg\:px-\[19px\] {
-    @media (width >= 64rem) {
-      padding-inline: 19px;
-    }
-  }
   .lg\:px-\[20px\] {
     @media (width >= 64rem) {
       padding-inline: 20px;
@@ -3982,11 +3908,6 @@
       padding-block: calc(var(--spacing) * 10);
     }
   }
-  .lg\:py-20 {
-    @media (width >= 64rem) {
-      padding-block: calc(var(--spacing) * 20);
-    }
-  }
   .lg\:py-\[4px\] {
     @media (width >= 64rem) {
       padding-block: 4px;
@@ -4045,11 +3966,6 @@
   .lg\:py-\[38px\] {
     @media (width >= 64rem) {
       padding-block: 38px;
-    }
-  }
-  .lg\:pb-5 {
-    @media (width >= 64rem) {
-      padding-bottom: calc(var(--spacing) * 5);
     }
   }
   .lg\:pb-\[38px\] {
