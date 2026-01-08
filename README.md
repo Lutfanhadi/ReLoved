@@ -2,7 +2,7 @@
 
 ## Deskripsi
 
-ReLoved adalah platform untuk menjual dan membeli barang preloved dengan berbagai kategori. Selain itu, pengguna juga dapat menukar fashion mereka atau menyumbangkannya kepada orang-orang yang membutuhkan pakaian layak. Pengguna dapat menampilkan produk mereka dan mengelola daftar jual dengan mudah.
+RePakai adalah platform untuk menjual dan membeli barang preloved dengan berbagai kategori. Selain itu, pengguna juga dapat menukar fashion mereka atau menyumbangkannya kepada orang-orang yang membutuhkan pakaian layak. Pengguna dapat menampilkan produk mereka dan mengelola daftar jual dengan mudah.
 
 ## Fitur
 
@@ -33,7 +33,7 @@ ReLoved adalah platform untuk menjual dan membeli barang preloved dengan berbaga
 **Clone Repository**
 
 ```sh
-git clone https://github.com/Lutfanhadi/ReLoved.git
+git clone https://github.com/Lutfanhadi/RePakai.git
 ```
 
 ## Nama anggota team heroes
